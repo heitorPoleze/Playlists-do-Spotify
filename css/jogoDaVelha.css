@@ -22,6 +22,11 @@ margin: 0;
 padding: 0;
 }
 
+h1{
+    font-family: "Workbench", sans-serif;
+    padding: 15px;
+}
+
 .wrap {
 width: 100vw;
 height: 100%;
@@ -29,17 +34,31 @@ overflow: hidden;
 display: inline-flex;
 }
 .sidebar {
-background-color: #d2b48c;
+background-color:#3b2f14;
 width: 100vw;
 height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.sidebar h1{
+    font-size: 25px;
+    
+}
+
+ .sidebar.direita {
+    overflow-y: scroll;
 }
 
 .content {
 display: flex;
 height: 100vh;
+
 flex-direction: column;
+background-color: #3f2618;
 }
 .square-container {
+
 overflow-y: scroll;
 display: grid;
 grid-template-columns: repeat(3, 1fr);
@@ -48,7 +67,8 @@ padding: 10px;
 
 }
 .square {
-background: #f3e7e7;
+border-radius: 20%;
+background: #aa9d7c;
 width: 17vw;
 height: 17vw;
 justify-self: center;
@@ -70,7 +90,7 @@ transition: 1s;
 }
 
 .heitorwave:hover{
-    box-shadow: 5px 5px 50px 5px #1c934f inset, 5px 5px 50px 5px #010604;
+    box-shadow: 5px 5px 50px 5px #1c934f inset, 5px 5px 50px 5px #0c2917;
 }
 
 .eQuente:hover{
@@ -85,17 +105,14 @@ transition: 1s;
     height: 100%;
     width: 100%;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20%;
 }
 
 .top-block {
-background-color: white;
+
 display: flex;
 flex-grow: 1;
 align-items: center;
 justify-content: center;
 }
-.top-block h1{
-    font-family: "Workbench", sans-serif;
-    padding: 15px;
-}
+
