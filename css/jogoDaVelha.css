@@ -10,8 +10,8 @@
 
 @media (min-width: 1140px) {
     .square {
-width: 12vw !important;
-height: 12vw !important;
+width: 10vw !important;
+height: 10vw !important;
 }
 
 }
@@ -31,16 +31,16 @@ h1{
 width: 100vw;
 height: 100%;
 overflow: hidden;
-display: inline-flex;
+display: flex;
 }
 .sidebar {
 background-color:#3b2f14;
-width: 100vw;
-height: 100vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
+flex-grow: 1;
+
 }
 
 .sidebar h1{
@@ -48,31 +48,26 @@ justify-content: space-between;
     
 }
 
- .sidebar.direita {
-    overflow-y: scroll;
-}
 
 .content {
 display: flex;
-height: 100vh;
-
 flex-direction: column;
 background-color: #3f2618;
+flex-grow: 1;
 }
 .square-container {
-
+    padding-top: 10px;
 overflow-y: scroll;
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 10px;
-padding: 10px;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 10px 1px;
 
 }
 .square {
 border-radius: 20%;
 background: #aa9d7c;
-width: 17vw;
-height: 17vw;
+width: 10vw;
+height: 10vw;
 justify-self: center;
 align-self: center;
 transition: 1s;
@@ -113,11 +108,6 @@ transition: 1s;
 .top-block {
 
 display: flex;
-flex-grow: 1;
 align-items: center;
 justify-content: center;
-}
-
-.top-block h1{
-    border-bottom: solid #175930 3px ;
 }
