@@ -15,6 +15,14 @@ height: 10vw !important;
 }
 
 }
+:root {
+    --color-white: #ffffff;
+    --color-black1: #000000;
+    --color-black2: #2c2c2c;
+    --color-red1: #7a0000;
+    --color-red2: #ff4040;
+    --color-green1: #627254;
+}
 
 * {
 box-sizing: border-box;
@@ -25,6 +33,8 @@ padding: 0;
 h1{
     font-family: "Workbench", sans-serif;
     padding: 15px;
+    color: var(--color-white);
+
 }
 
 .wrap {
@@ -32,15 +42,19 @@ width: 100vw;
 height: 100%;
 overflow: hidden;
 display: flex;
+flex-direction: column;
+
 }
+
+
 .sidebar {
-background-color:#3b2f14;
+width: 100vw;
+height: 100%;
+background-color: var(--color-black2);
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-between;
-flex-grow: 1;
-
 }
 
 .sidebar h1{
@@ -52,14 +66,16 @@ flex-grow: 1;
 .content {
 display: flex;
 flex-direction: column;
-background-color: #3f2618;
-flex-grow: 1;
+background-color:#33392A;
+width: 100vw;
+height: 100%;
 }
+
 .square-container {
-    padding-top: 10px;
+padding-top: 10;
 overflow-y: scroll;
 display: grid;
-grid-template-columns: repeat(4, 1fr);
+grid-template-columns: repeat(3, 1fr);
 grid-gap: 10px 1px;
 
 }
@@ -110,4 +126,29 @@ transition: 1s;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 22px;
+    transition: 0.7s;
+}
+a:hover{
+color: var(--color-green1);
+}
+.box-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    letter-spacing: 7px;
+}
+.logo {
+    width: 80px;
+}
+
+.box-a {
+    display: flex;
+    gap: 50px;
 }
